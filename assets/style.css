@@ -9,4 +9,30 @@ body {
   height: 10px;
   background: #fff;
   border-radius: 50%;
+  animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  24% {
+    opacity: 1;
+    transform: translate(-5px, 20vh);
+  }
+  42% {
+    transform: translate(13px, 40vh);
+  }
+  77% {
+    opacity: 1;
+    transform: translate(-17px, 80vh);
+  }
+  83% {
+    transform: translate(6px, 85vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 100vh);
+  }
 }
